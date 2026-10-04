@@ -1,0 +1,194 @@
+.envelope-stage {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 65% 30%, rgba(255, 190, 120, 0.12), transparent 70%),
+    radial-gradient(ellipse 120% 90% at 50% 110%, #22160f, var(--night) 65%);
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.envelope-stage__scene {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.envelope-stage[data-ready='true'] .envelope-stage__scene {
+  opacity: 1;
+}
+
+.envelope3d {
+  position: absolute !important;
+  inset: 0;
+}
+
+.envelope3d__name {
+  font-size: 46px;
+  line-height: 1.2;
+  color: #2b1d15;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.envelope-stage__hint,
+.envelope-stage__line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.envelope-stage__hint {
+  bottom: max(11vh, calc(env(safe-area-inset-bottom) + 64px));
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+
+.envelope-stage__line {
+  top: 50%;
+  translate: 0 -50%;
+  width: min(88vw, 520px);
+  font-size: clamp(1.7rem, 5.6vw, 2.5rem);
+  line-height: 1.3;
+  color: var(--ink-soft);
+  filter: drop-shadow(0 0 14px rgba(241, 230, 210, 0.9));
+  z-index: 3;
+}
+
+.envelope-stage__line [data-tegaki='root'] {
+  text-align: center;
+}
+
+.envelope-stage__veil {
+  position: absolute;
+  inset: 0;
+  background: var(--paper);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- CSS 3D fallback ---------- */
+
+.envelope-lite {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  perspective: 1400px;
+  transform-origin: 50% 50%;
+}
+
+.envelope-lite__env {
+  --w: min(78vw, 520px);
+  --h: calc(var(--w) * 0.656);
+  position: relative;
+  width: var(--w);
+  height: var(--h);
+  transform-style: preserve-3d;
+  animation: lite-float 7s ease-in-out infinite;
+  filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.55));
+}
+
+.envelope-lite__env.is-opening {
+  animation: none;
+}
+
+@keyframes lite-float {
+  0%, 100% { transform: rotateY(-3deg) rotateX(1deg) translateY(0); }
+  50% { transform: rotateY(3deg) rotateX(-1deg) translateY(-6px); }
+}
+
+.envelope-lite__back,
+.envelope-lite__pocket,
+.envelope-lite__flap,
+.envelope-lite__letter {
+  position: absolute;
+  inset: 0;
+  backface-visibility: visible;
+}
+
+.envelope-lite__back {
+  background: #d9c6a3;
+  border-radius: 3px;
+}
+
+.envelope-lite__letter {
+  inset: 6% 6%;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 22px, rgba(60, 40, 20, 0.05) 22px 23px),
+    #f4ead7;
+  transform-style: preserve-3d;
+  transform: translateZ(1px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.envelope-lite__pocket {
+  transform: translateZ(2px);
+  background: #efe3cc;
+}
+
+.envelope-lite__pocket--left {
+  clip-path: polygon(0 0, 0 100%, 50% 58%);
+}
+
+.envelope-lite__pocket--right {
+  clip-path: polygon(100% 0, 100% 100%, 50% 58%);
+  background: #e6d6b8;
+}
+
+.envelope-lite__pocket--bottom {
+  clip-path: polygon(0 100%, 100% 100%, 50% 58%);
+  transform: translateZ(3px);
+  box-shadow: inset 0 -30px 40px rgba(0, 0, 0, 0.04);
+}
+
+.envelope-lite__flap {
+  height: 62%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: linear-gradient(180deg, #f1e6d2, #e8d9bb);
+  transform-origin: 50% 0;
+  transform: translateZ(4px) rotateX(0deg);
+  transform-style: preserve-3d;
+}
+
+.envelope-lite__seal {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: calc(var(--w) * 0.19);
+  height: calc(var(--w) * 0.19);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) translateZ(6px);
+  background: radial-gradient(circle at 35% 30%, #f1d78d, #c9a24c 55%, #8f6c25);
+  box-shadow: 0 0 22px 2px rgba(201, 162, 76, 0.35), 0 6px 14px rgba(0, 0, 0, 0.3);
+  display: grid;
+  place-items: center;
+}
+
+.envelope-lite__bunny {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: drop-shadow(0 1px 1px rgba(80, 55, 10, 0.55)) drop-shadow(0 -1px 0 rgba(255, 245, 210, 0.5));
+}
+
+.envelope-lite__name {
+  position: absolute;
+  left: 50%;
+  top: 84%;
+  transform: translate(-50%, -50%) translateZ(5px);
+  font-size: calc(var(--w) * 0.095);
+  line-height: 1.2;
+  color: #2b1d15;
+  white-space: nowrap;
+  pointer-events: none;
+}
