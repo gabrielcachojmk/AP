@@ -50,7 +50,7 @@ export function Gate({ onUnlock }: { onUnlock: () => void }) {
         <Handwriting as="h1" face="script" className="gate__name" delay={0.9} speed={0.9}>
           {recipient}
         </Handwriting>
-        <p className="gate__prompt">A palavra que está no cartão.</p>
+        <p className="gate__prompt">Digite a senha.</p>
         <label className="sr-only" htmlFor="gate-word">
           Palavra do cartão
         </label>

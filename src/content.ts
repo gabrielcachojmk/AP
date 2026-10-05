@@ -9,10 +9,10 @@ export type Photo = {
 }
 
 export const recipient = 'Ana'
-export const sender = 'Gabi'
+export const sender = 'Gabriel'
 
 /** Senha escrita no cartão dentro do envelope físico. Case-insensitive. */
-export const password = 'ana'
+export const password = 'analinda'
 
 export const date = {
   iso: '2026-10-07',
@@ -39,16 +39,16 @@ export const photos = {
 export const scenes = {
   ritual: {
     envelopeName: recipient,
-    afterSeal: 'Não coube no papel.',
+    afterSeal: 'Para o meu amor',
     hint: 'toque para abrir',
   },
 
   thesis: {
     greeting: `${recipient},`,
     paragraphs: [
-      'Pediram que eu escrevesse sobre você. Caberia em uma folha. Eu não quis.',
-      'Hoje não preciso te listar. Preciso te dizer uma coisa só, com calma: você é a pessoa com quem a minha vida encontra o chão. Não o enfeite. O lugar.',
-      'O que vem depois desta página são pedaços disso. Coisas que eu vejo e que, às vezes, você passa reto.',
+      'A distância nunca nos impediu de nada, e não seria agora que ela impediria.',
+      'Quanto mais tempo a gente passa junto, mais passo a te admirar. Que essa carta seja um lembrete disso: da mulher que você é aos meus olhos.',
+      'O que vem depois destas páginas são alguns lembretes do quanto você brilha para o mundo e para mim.',
     ],
     cta: 'Continua',
   },
