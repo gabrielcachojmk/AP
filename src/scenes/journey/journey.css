@@ -330,6 +330,11 @@ body[data-phase='journey'] .journey__backdrop canvas {
   border-radius: 4px;
 }
 
+.horizon__frame .photo-plane--lite img {
+  object-position: center 18%;
+  transform-origin: 50% 20%;
+}
+
 .horizon__text {
   position: absolute;
   left: 50%;

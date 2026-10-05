@@ -16,13 +16,11 @@ export function HomeScene({ tier }: { tier: Tier }) {
   const section = useScrub((tl, el) => {
     const a = el.querySelector('.home__a')
     const b = el.querySelector('.home__b')
-    const kicker = el.querySelector('.home__kicker')
 
     tl.fromTo(a, { xPercent: -70, rotate: -6, opacity: 0 }, { xPercent: -4, rotate: -1.5, opacity: 1, duration: 0.55, ease: 'power2.out' }, 0)
       .fromTo(b, { xPercent: 70, rotate: 6, opacity: 0 }, { xPercent: 4, rotate: 1.5, opacity: 1, duration: 0.55, ease: 'power2.out' }, 0)
       .to(left.current, { zoom: 1.0, duration: 1 }, 0)
       .to(right.current, { zoom: 1.0, duration: 1 }, 0)
-      .fromTo(kicker, { opacity: 0 }, { opacity: 0.6, duration: 0.1 }, 0.15)
 
     const slot = 0.6 / ink.length
     ink.forEach((line, i) => {
@@ -31,9 +29,8 @@ export function HomeScene({ tier }: { tier: Tier }) {
   })
 
   return (
-    <section className="scene home" ref={section} aria-label="O que você é">
+    <section className="scene home" ref={section}>
       <div className="scene__frame">
-        <p className="kicker home__kicker">{home.kicker}</p>
         <div className="home__pair">
           <div className="home__a">
             <PhotoPlane photo={photos.home[0]} tier={tier} state={left} warmth={0.9} />

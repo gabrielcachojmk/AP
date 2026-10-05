@@ -13,9 +13,6 @@ export function AdmirationScene() {
   const section = useScrub(
     (tl, el) => {
       const cards = el.querySelectorAll<HTMLElement>('.admire__card')
-      const kicker = el.querySelector('.admire__kicker')
-
-      tl.fromTo(kicker, { opacity: 0 }, { opacity: 0.6, duration: 0.08 }, 0)
 
       const slot = 0.9 / cards.length
       cards.forEach((card, i) => {
@@ -36,9 +33,8 @@ export function AdmirationScene() {
   )
 
   return (
-    <section className="scene admire" ref={section} aria-label="O que admiro">
+    <section className="scene admire" ref={section}>
       <div className="scene__frame">
-        <p className="kicker admire__kicker">{admiration.kicker}</p>
         <ul className="admire__table">
           {admiration.fragments.map((text, i) => (
             <li className="admire__card" key={i} style={{ ['--i' as string]: i }}>

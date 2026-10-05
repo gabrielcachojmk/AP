@@ -20,14 +20,14 @@ export const date = {
 }
 
 export const photos = {
-  memory: { src: '/memories/01-memoria.jpg', alt: 'Ana nas montanhas, de costas, com o sol e corações' } satisfies Photo,
+  memory: { src: '/memories/01-memoria.jpg', alt: 'Ana no Chile, o dia em que nos conhecemos' } satisfies Photo,
   admiration: [
     { src: '/memories/02-admiro-a.jpg', alt: 'Ana no pôr do sol, sorrindo' },
     { src: '/memories/03-admiro-b.jpg', alt: 'Brinde de Aperol no pôr do sol' },
     { src: '/memories/04-admiro-c.jpg', alt: 'Nossas mãos entrelaçadas no avião' },
     { src: '/memories/05-admiro-d.png', alt: 'Nós dois no barco, no mar' },
   ] satisfies Photo[],
-  pride: { src: '/memories/06-orgulho.jpg', alt: 'Ana comendo um sanduíche' } satisfies Photo,
+  pride: { src: '/memories/06-orgulho.jpg', alt: 'Ana sorrindo com hambúrguer e batata' } satisfies Photo,
   home: [
     { src: '/memories/07-casa-a.jpg', alt: 'Ana nadando na água cristalina' },
     { src: '/memories/08-casa-b.jpg', alt: 'Ana dormindo nas cadeiras do aeroporto' },
@@ -54,53 +54,48 @@ export const scenes = {
   },
 
   memory: {
-    kicker: 'uma memória',
     lines: [
-      'Ainda é de manhã na minha cabeça.',
-      'Você do outro lado da mesa, a xícara esquecida, falando de um dia comum como se ele merecesse atenção.',
-      'Eu lembro do silêncio que ficou depois. Não era vazio. Era a certeza de que eu queria todos os dias comuns — se fossem com você.',
+      'Foi no Chile que a gente se conheceu.',
+      'Pouco tempo juntos — e ainda assim intenso o bastante pra eu te enxergar de verdade naquele dia.',
+      'E foi o suficiente pra eu saber: todo esforço valia a pena por uma pessoa como você.',
     ],
   },
 
   admiration: {
-    kicker: 'o que admiro',
     fragments: [
-      'Admiro a forma como você entra num cômodo e ele muda de temperatura.',
-      'Admiro que você escuta até o fim — mesmo quando já sabe o que vai dizer.',
-      'Admiro a coragem quieta: a de escolher o certo quando o fácil estava na mesa.',
-      'Admiro que você não precisa ser o centro para ser o eixo.',
+      'Nem todo mundo tem a sorte de encontrar a sua pessoa.',
+      'Aquela que, diante de um mundo inteiro, é sua.',
+      'E, diante de um mundo infinito, encontra aconchego no encontro.',
+      'Confiança. Palavras. Tudo o que, de mil jeitos, se resume a você.',
     ],
   },
 
   pride: {
-    kicker: 'orgulho',
-    lead: 'Tenho orgulho da mulher que você é quando ninguém está olhando.',
+    lead: 'Tenho orgulho de ter te encontrado — e de reconhecer, desde então, quem você é pra mim.',
     body:
-      'Da disciplina com os próprios sonhos. Do jeito de crescer sem anunciar. Das vezes em que o mundo pediu menos de você e você entregou inteira mesmo assim.',
-    close: 'Você minimiza. Eu não.',
+      'Não é sorte comum. É a certeza quieta de que, no meio de tanta gente, você é a pessoa com quem o mundo ganha sentido.',
+    close: 'E o amor, pra uma palavra de quatro letras, cabe muito pouco do que eu sinto por você.',
   },
 
   home: {
-    kicker: 'o que você é',
     lines: [
-      'Você é família no sentido mais simples: é para onde eu volto.',
-      'É a mesa. É o nós. É a pessoa com quem a minha história deixa de ser só minha.',
-      'Não é que você faz parte da minha vida. É que, com você, a vida ganhou um endereço.',
+      'Você é o encontro. O aconchego. A confiança.',
+      'É a pessoa diante de quem o mundo inteiro cabe — e ainda sobra espaço pra nós.',
+      'Não é que eu te encontrei no mundo. É que, com você, o mundo encontrou lugar.',
     ],
   },
 
   horizon: {
-    kicker: 'os próximos anos',
     lines: [
-      'Os próximos anos não pedem que você seja mais do que já é.',
-      'Pedem que você não diminua o que já cabe em você.',
-      'Quando o medo aparecer, eu estarei do mesmo lado da porta.',
+      'Que a gente continue se encontrando — no esforço, na distância, nos dias bons e nos difíceis.',
+      'Que a confiança continue sendo o chão.',
+      'E que o amor, mesmo quando a palavra for pequena demais, continue sendo o que a gente faz.',
     ],
-    final: 'Pode ir. Eu fico. E vou com você.',
+    final: 'Você é a minha pessoa. E eu fico — e vou — com você.',
   },
 
   echo: {
-    line: 'Continua sendo isto: você é o lugar para onde eu volto.',
+    line: 'Porque, no fim, tudo se resume a isto: o que eu sinto por você não cabe em quatro letras.',
     date: date.label,
     signoff: 'Com amor,',
     signature: sender,

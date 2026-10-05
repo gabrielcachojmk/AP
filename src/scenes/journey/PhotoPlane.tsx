@@ -37,7 +37,7 @@ function LitePlane({ photo, state, className }: Omit<Props, 'tier' | 'warmth'>) 
     const tick = () => {
       const s = state.current
       if (img.current) {
-        img.current.style.transform = `scale(${s.zoom}) translateY(${(-s.offset * 100).toFixed(2)}%)`
+        img.current.style.transform = `scale(${s.zoom}) translateY(${(s.offset * 100).toFixed(2)}%)`
       }
       if (wrap.current) {
         const cut = ((1 - s.reveal) * 100).toFixed(2)

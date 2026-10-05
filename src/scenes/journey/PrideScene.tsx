@@ -15,26 +15,23 @@ export function PrideScene({ tier }: { tier: Tier }) {
   const section = useScrub((tl, el) => {
     const frame = el.querySelector('.pride__portrait')
     const glow = el.querySelector('.pride__glow')
-    const kicker = el.querySelector('.pride__kicker')
 
     tl.fromTo(frame, { scale: 0.82, opacity: 0, y: 40 }, { scale: 1, opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' }, 0)
       .to(plane.current, { zoom: 1.16, offset: -0.03, duration: 1 }, 0)
       .fromTo(glow, { opacity: 0 }, { opacity: 1, duration: 0.6 }, 0.25)
-      .fromTo(kicker, { opacity: 0 }, { opacity: 0.6, duration: 0.1 }, 0.1)
       .to(ink.lead, { current: 1, duration: 0.22 }, 0.26)
       .to(ink.body, { current: 1, duration: 0.34 }, 0.46)
       .to(ink.close, { current: 1, duration: 0.14 }, 0.82)
   })
 
   return (
-    <section className="scene pride" ref={section} aria-label="Orgulho">
+    <section className="scene pride" ref={section}>
       <div className="scene__frame">
         <div className="pride__glow" aria-hidden="true" />
         <div className="pride__portrait">
           <PhotoPlane photo={photos.pride} tier={tier} state={plane} warmth={0.85} />
         </div>
         <div className="pride__text">
-          <p className="kicker pride__kicker">{pride.kicker}</p>
           <Handwriting as="p" mode="manual" progress={ink.lead} className="pride__lead">
             {pride.lead}
           </Handwriting>
