@@ -20,20 +20,20 @@ export const date = {
 }
 
 export const photos = {
-  memory: { src: '/memories/01-memoria.svg', alt: 'Uma manhã comum, nós duas à mesa' } satisfies Photo,
+  memory: { src: '/memories/01-memoria.jpg', alt: 'Ana nas montanhas, de costas, com o sol e corações' } satisfies Photo,
   admiration: [
-    { src: '/memories/02-admiro-a.svg', alt: 'Ana entrando em um cômodo' },
-    { src: '/memories/03-admiro-b.svg', alt: 'Ana ouvindo até o fim' },
-    { src: '/memories/04-admiro-c.svg', alt: 'Ana escolhendo o certo' },
-    { src: '/memories/05-admiro-d.svg', alt: 'Ana sendo o eixo' },
+    { src: '/memories/02-admiro-a.jpg', alt: 'Ana no pôr do sol, sorrindo' },
+    { src: '/memories/03-admiro-b.jpg', alt: 'Brinde de Aperol no pôr do sol' },
+    { src: '/memories/04-admiro-c.jpg', alt: 'Nossas mãos entrelaçadas no avião' },
+    { src: '/memories/05-admiro-d.png', alt: 'Nós dois no barco, no mar' },
   ] satisfies Photo[],
-  pride: { src: '/memories/06-orgulho.svg', alt: 'Retrato da Ana' } satisfies Photo,
+  pride: { src: '/memories/06-orgulho.jpg', alt: 'Ana comendo um sanduíche' } satisfies Photo,
   home: [
-    { src: '/memories/07-casa-a.svg', alt: 'Nós duas' },
-    { src: '/memories/08-casa-b.svg', alt: 'A nossa mesa' },
+    { src: '/memories/07-casa-a.jpg', alt: 'Ana nadando na água cristalina' },
+    { src: '/memories/08-casa-b.jpg', alt: 'Ana dormindo nas cadeiras do aeroporto' },
   ] satisfies [Photo, Photo],
-  horizon: { src: '/memories/09-horizonte.svg', alt: 'Um caminho ao amanhecer' } satisfies Photo,
-  echo: { src: '/memories/10-eco.svg', alt: 'Uma foto quieta de nós' } satisfies Photo,
+  horizon: { src: '/memories/09-horizonte.jpg', alt: 'Ana no restaurante, sorrindo' } satisfies Photo,
+  echo: { src: '/memories/10-eco.jpg', alt: 'Ana no Coliseu, ao entardecer' } satisfies Photo,
 }
 
 export const scenes = {
