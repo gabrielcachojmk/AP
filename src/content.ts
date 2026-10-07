@@ -73,8 +73,8 @@ export const scenes = {
   pride: {
     lead: 'Tenho orgulho de ter te encontrado, e de reconhecer desde então quem você é pra mim.',
     body:
-      'Não é sorte comum. É a certeza quieta de que, no meio de tanta gente, você é a pessoa com quem o mundo ganha sentido. A pessoa com quem o esforço deixa de parecer peso e passa a parecer caminho. A pessoa que, mesmo longe, continua sendo direção.',
-    close: 'E amor, pra uma palavra de quatro letras, cabe muito pouco do que eu sinto por você.',
+      'É a certeza quieta de que, no meio de tanta gente, você é a pessoa com quem o mundo ganha sentido. A pessoa com quem o esforço deixa de parecer peso e passa a parecer caminho. A pessoa que, mesmo longe, continua sendo direção.',
+    close: 'Tenho sorte de ver de perto toda sua força e a mulher que você é, desde os pequenos detalhes.',
   },
 
   home: {
@@ -95,7 +95,7 @@ export const scenes = {
   },
 
   echo: {
-    line: 'Porque, no fim, tudo se resume a isto: o que eu sinto por você não cabe em quatro letras.',
+    line: 'Porque, no fim, tudo se resume a isto: o que eu sinto por você nenhuma distância impede de demonstrar.',
     date: date.label,
     signoff: 'Com amor,',
     signature: sender,
