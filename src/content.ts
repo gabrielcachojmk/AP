@@ -56,42 +56,42 @@ export const scenes = {
   memory: {
     lines: [
       'Foi no Chile que a gente se conheceu.',
-      'Pouco tempo juntos — e ainda assim intenso o bastante pra eu te enxergar de verdade naquele dia.',
-      'E foi o suficiente pra eu saber: todo esforço valia a pena por uma pessoa como você.',
+      'Foi pouco tempo juntos, e mesmo assim intenso o bastante pra eu te enxergar de verdade naquele dia, no pouco que deu pra conhecer você.',
+      'E foi o suficiente pra eu saber que todo esforço valia a pena por uma pessoa como você.',
     ],
   },
 
   admiration: {
     fragments: [
-      'Nem todo mundo tem a sorte de encontrar a sua pessoa.',
-      'Aquela que, diante de um mundo inteiro, é sua.',
-      'E, diante de um mundo infinito, encontra aconchego no encontro.',
-      'Confiança. Palavras. Tudo o que, de mil jeitos, se resume a você.',
+      'Nem todo mundo tem a sorte de encontrar a sua pessoa na vida.',
+      'Aquela que, diante de um mundo inteiro, é sua de um jeito quieto e certo.',
+      'E que, diante de um mundo infinito, encontra aconchego, confiança e casa no encontro.',
+      'Palavras que, de mil maneiras, sempre voltam pro mesmo lugar: você.',
     ],
   },
 
   pride: {
-    lead: 'Tenho orgulho de ter te encontrado — e de reconhecer, desde então, quem você é pra mim.',
+    lead: 'Tenho orgulho de ter te encontrado, e de reconhecer desde então quem você é pra mim.',
     body:
-      'Não é sorte comum. É a certeza quieta de que, no meio de tanta gente, você é a pessoa com quem o mundo ganha sentido.',
-    close: 'E o amor, pra uma palavra de quatro letras, cabe muito pouco do que eu sinto por você.',
+      'Não é sorte comum. É a certeza quieta de que, no meio de tanta gente, você é a pessoa com quem o mundo ganha sentido. A pessoa com quem o esforço deixa de parecer peso e passa a parecer caminho. A pessoa que, mesmo longe, continua sendo direção.',
+    close: 'E amor, pra uma palavra de quatro letras, cabe muito pouco do que eu sinto por você.',
   },
 
   home: {
     lines: [
-      'Você é o encontro. O aconchego. A confiança.',
-      'É a pessoa diante de quem o mundo inteiro cabe — e ainda sobra espaço pra nós.',
+      'Você é o encontro. O aconchego. A confiança. O lugar onde a gente respira sem precisar explicar.',
+      'É a pessoa diante de quem o mundo inteiro cabe, e ainda sobra espaço pra nós dois.',
       'Não é que eu te encontrei no mundo. É que, com você, o mundo encontrou lugar.',
     ],
   },
 
   horizon: {
     lines: [
-      'Que a gente continue se encontrando — no esforço, na distância, nos dias bons e nos difíceis.',
-      'Que a confiança continue sendo o chão.',
-      'E que o amor, mesmo quando a palavra for pequena demais, continue sendo o que a gente faz.',
+      'Que a gente continue se encontrando no esforço, na distância, nos dias bons e nos difíceis.',
+      'Que a confiança continue sendo o chão onde a gente pisa, mesmo quando o caminho apertar.',
+      'E que o amor, mesmo quando a palavra for pequena demais pra caber o que a gente sente, continue sendo o que a gente escolhe fazer.',
     ],
-    final: 'Você é a minha pessoa. E eu fico — e vou — com você.',
+    final: 'Você é a minha pessoa. Eu fico, e vou, com você.',
   },
 
   echo: {
