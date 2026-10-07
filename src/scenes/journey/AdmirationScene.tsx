@@ -39,7 +39,7 @@ export function AdmirationScene() {
           {admiration.fragments.map((text, i) => (
             <li className="admire__card" key={i} style={{ ['--i' as string]: i }}>
               <img src={photos.admiration[i]?.src} alt={photos.admiration[i]?.alt ?? ''} loading="lazy" decoding="async" />
-              <Handwriting as="p" mode="manual" progress={ink[i]} className="admire__caption">
+              <Handwriting as="p" mode="manual" pace="flow" progress={ink[i]} className="admire__caption">
                 {text}
               </Handwriting>
             </li>

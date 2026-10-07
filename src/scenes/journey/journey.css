@@ -165,20 +165,23 @@ body[data-phase='journey'] .journey__backdrop canvas {
 }
 
 .admire__table {
-  position: relative;
+  /* One grid cell: height follows the tallest card (no empty cream slab). */
+  display: grid;
+  justify-items: stretch;
+  align-items: start;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: min(78vw, 320px);
-  aspect-ratio: 3 / 4.55;
+  width: min(86vw, 360px);
 }
 
 .admire__card {
-  position: absolute;
-  inset: 0;
+  grid-area: 1 / 1;
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 9px 9px 12px;
+  width: 100%;
+  padding: 10px 10px 12px;
   background: #f5efe3;
   color: #1d1410;
   border-radius: 2px;
@@ -187,11 +190,12 @@ body[data-phase='journey'] .journey__backdrop canvas {
   opacity: 0;
   translate: calc(var(--i) * 4px) calc(var(--i) * -3px);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .admire__card img {
   width: 100%;
-  aspect-ratio: 1 / 0.9;
+  aspect-ratio: 1 / 1;
   flex: 0 0 auto;
   object-fit: cover;
   filter: saturate(0.85) contrast(1.05) sepia(0.15);
@@ -199,13 +203,16 @@ body[data-phase='journey'] .journey__backdrop canvas {
 
 .admire__caption {
   flex: 0 0 auto;
-  width: 100%;
+  width: 100% !important;
   max-width: 100%;
-  margin: 8px 2px 0 !important;
-  font-size: clamp(1.56rem, 6.2vw, 1.9rem);
-  line-height: 1.2;
+  margin: 10px 2px 0 !important;
+  font-size: clamp(1.12rem, 4.1vw, 1.32rem);
+  line-height: 1.28;
   color: #2a1e17;
   box-sizing: border-box;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 /* ---------- 4. Pride: swell ---------- */
@@ -505,21 +512,16 @@ body[data-phase='journey'] .journey__backdrop canvas {
   }
 
   .admire__table {
-    width: min(82vw, 320px);
-    aspect-ratio: 3 / 4.7;
+    width: min(90vw, 340px);
   }
 
   .admire__card {
-    padding: 8px 8px 10px;
-  }
-
-  .admire__card img {
-    aspect-ratio: 1 / 0.82;
+    padding: 9px 9px 11px;
   }
 
   .admire__caption {
-    margin: 7px 1px 0 !important;
-    font-size: 1.56rem;
-    line-height: 1.18;
+    margin: 9px 1px 0 !important;
+    font-size: 1.18rem;
+    line-height: 1.26;
   }
 }
