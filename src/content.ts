@@ -65,7 +65,7 @@ export const scenes = {
     fragments: [
       'Nem todo mundo tem a sorte de encontrar a sua pessoa na vida.',
       'Aquela que, diante de um mundo inteiro, é sua de um jeito quieto e certo.',
-      'E que, diante de um mundo infinito, encontra aconchego, confiança e casa no encontro.',
+      'E que, diante de um mundo infinito, encontra aconchego, confiança e casa um no outro.',
       'Palavras que, de mil maneiras, sempre voltam pro mesmo lugar: você.',
     ],
   },
